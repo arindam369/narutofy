@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narutofy | Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" href="./static/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="page">
+        <div class="heading">Narutofy</div>
+        <div class="description">Listen your favourite Naruto Songs Here</div>
+
+        <div class="container">
+            <div class="music-player-container">
+
+                <div class="image-box">
+                    <img src="./static/images/3.jpg" height="210px" width="275px" alt="image.jpg" id="music-image">
+                </div>
+
+                <div class="music-box">
+                    <audio src="./static/music/3.mp3" controls id="music"></audio>
+                </div>
+
+                <div class="name-box">
+                    <div class="title" id="music-title">Blue Bird</div>
+                    <div class="singer-name" id="music-singer">Ikimono Gakari</div>
+                </div>
+
+                <div class="progress-box" id="progress-box">
+                    <div class="progress" id="onProgress"></div>
+                    <div class="time-duration">
+                        <span class="starting-time" id="current-time">0:00</span>
+                        <span class="ending-time" id="duration">3:32</span>
+                    </div>
+                </div>
+                <br>
+                <div class="volume-right">
+                    <div id="volIcon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <div id="muteIcon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                    <div class="volBar" id="volBar">
+                        <div class="vol" id="vol"></div>
+                    </div>
+                </div>
+
+                <div class="button-box">
+                    <i class="fas fa-backward" id="5s_back" title="5s Backward"></i>
+                    <i class="fas fa-caret-left" id="prev-button" title="Previous Song"></i>
+                    <i class="fas fa-play-circle" id="play-button" title="Play"></i>
+                    <i class="fas fa-caret-right" id="next-button" title="Next Song"></i>
+                    <i class="fas fa-forward" id="5s_front" title="5s Forward"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

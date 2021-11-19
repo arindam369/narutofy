@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(231, 227, 227);
+}
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.description{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.music-player-container{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px;
+    background-color: rgb(248, 246, 246);
+}
+img{
+    border-radius: 10px;
+}
+.progress-box{
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 5px;
+    height: 7px;
+    margin: 20px 10px 10px 10px;
+    background-color: white;
+}
+
+.progress{
+    background-color: red;
+    width: 0%;
+    height: 100%;
+}
+.time-duration{
+    margin-top: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.time-duration span{
+    font-size: .8rem;
+}
+.button-box i{
+    font-size: 35px;
+    margin: 30px 10px;
+}
+
+.name-box{
+    font-size: .8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.singer-name{
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+i:hover{
+    color: red;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.volume-right{
+    margin-left: 10px;
+    text-align: left ;
+}
+.volBar{
+    border: 1px solid black;
+    height: 13px;
+    width: 100px;
+    position: absolute;
+    margin-left: 1px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.vol{
+    height: 100%;
+    background-color: red;
+    width: 30%;
+}
+
+@media (max-width:400px){
+    .heading{
+        font-size: 1.8rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .description{
+        font-size: 1.1rem;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .image-box{
+        height: 210px;
+        width: 275px;
+    }
+    .image-box img{
+        height: 210px;
+        width: 275px;
+    }
+    .music-player-container{
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .progress-box{
+        border-radius: 5px;
+        height: 7px;
+        margin: 20px 10px 10px 10px;
+    }
+    .time-duration{
+        margin-top: 10px;
+    }
+    .time-duration span{
+        font-size: .8rem;
+    }
+
+
+    .button-box i{
+        font-size: 28px;
+        margin: 30px 10px;
+    }
+    
+    .name-box{
+        font-size: .8rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .title{
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
+    .singer-name{
+        font-size: .9rem;
+    }
+    .volBar{
+        height: 10px;
+        width: 80px;
+        margin-left: 1px;
+    }
+    .vol{
+        height: 100%;
+        width: 30%;
+    }  
+}
