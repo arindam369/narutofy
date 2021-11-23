@@ -85,6 +85,9 @@ i:hover{
     margin-left: 10px;
     text-align: left ;
 }
+#volIcon{
+    display: inline-block;
+}
 .volBar{
     border: 1px solid black;
     height: 13px;
