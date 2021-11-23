@@ -116,8 +116,11 @@ function play_prev(){
     else {
         musicIndex = musicArray.length - 1;
     }
+    setTimeout(() => {
+        playBtn.classList.replace("fa-play-circle", "fa-pause-circle");        
+    }, 500);
+    playBtn.classList.replace("fa-pause-circle", "fa-play-circle");
     playSong(musicArray[musicIndex]);
-    playBtn.classList.replace("fa-play-circle", "fa-pause-circle");
 }
 
 playBtn.addEventListener("click", play_pause);
@@ -146,12 +149,19 @@ function updateProgress(e) {
         if (sec < 10) {
             sec = '0' + sec;
         }
+        var min_duration = Math.floor(duration / 60);
         var sec_duration = Math.floor(duration%60);
         if(sec_duration<10){
             sec_duration = '0' + sec_duration;
         }
+        
         currTime.textContent = `${min}:${sec}`;
-        timeSpan.textContent = `${Math.floor(duration / 60)}:${sec_duration}`;
+        if(min_duration){
+            timeSpan.textContent = `${min_duration}:${sec_duration}`;
+        }
+        else{
+            timeSpan.textContent = "0:00";
+        }
     }
     if(music.volume<=0){
         volIcon.hidden=true;
